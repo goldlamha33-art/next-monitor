@@ -10,3 +10,8 @@ def main():
         )
 
         page = browser.new_page()
+        page.goto(URL, wait_until="networkidle", timeout=120000)
+
+        print(page.title())
+
+        browser.close()
