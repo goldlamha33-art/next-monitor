@@ -15,3 +15,5 @@ def main():
         print(page.title())
 
         browser.close()
+if __name__ == "__main__":
+    main()
